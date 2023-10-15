@@ -110,7 +110,6 @@ usuario = {
         "ultimo_login": "27/08/2023"
     }
 }
-
 app = Flask(__name__)
 
 @app.route("/")
