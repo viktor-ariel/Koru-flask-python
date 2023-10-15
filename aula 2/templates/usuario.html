@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,12 +7,18 @@
     <title>Personagem</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static',filename='css/reset.css')}}">
-    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style_usuario.css')}}">
 </head>
 <body>
-    <div class="container"><h1>{{nome}}</h1>
-    <img src="{{imagem}}">
-    <div><p>A sua classe é {{classe}}.</p> <p> Sua altura é {{altura}} </p><p>Data de nascimento {{data_nascimento}}</p></div>
-</div>
+    <div class="container"><h1>Usuário</h1>
+        <div>
+            <p>Nome: {{nome}}</p>
+            <p>Login: {{login}}</p>
+            <p> E-mail: {{email}} </p>
+            <p>Senha: {{senha}}</p>
+            <p>Status: {{ativo}}</p>
+            <p>Ultimo Login {{ultimo_login}}</p>
+        </div>
+    </div>
 </body>
 </html>
